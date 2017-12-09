@@ -1,0 +1,23 @@
+{
+  "name": "MicroDSL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc",
+    "build:live": "./node_modules/.bin/ts-node --compiler -- ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.57",
+    "nodemon": "^1.12.5",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "commander": "^2.12.2"
+  }
+}
