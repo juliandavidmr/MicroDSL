@@ -18,6 +18,7 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "commander": "^2.12.2"
+    "commander": "^2.12.2",
+    "mysqlspec": "^1.0.5"
   }
 }

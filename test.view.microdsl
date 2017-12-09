@@ -1,0 +1,7 @@
+Table: <% TABLENAME %>
+
+<ul>
+  <% for(var i=0; i< TABLES.length; i++) { %>
+    <li><% TABLES[i] %></li>
+  <% } %>
+</ul>
