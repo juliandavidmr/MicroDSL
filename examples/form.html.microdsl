@@ -1,0 +1,9 @@
+Register <%= TABLENAME %>
+
+<form action="/<%= TABLENAME %>" method="post">  
+  <% for(var i=0; i< COLUMNS.length; i++) { %>
+    <input type="text" name="<%= COLUMNS[i].name %>" id="<%= COLUMNS[i].name %>">
+  <% } %>
+
+  <input type="button" value="Send">  
+</form>

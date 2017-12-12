@@ -1,7 +1,8 @@
 Table: <%= TABLENAME %>
 
+Columnas: <%= COLUMNS.length %>
 <ul>
   <% for(var i=0; i< COLUMNS.length; i++) { %>
-    <li><%= COLUMNS[i] %></li>
+    <li><%= COLUMNS[i].name %></li>
   <% } %>
 </ul>

@@ -1,0 +1,5 @@
+const <%= TABLENAME %> = sequelize.define('<%= TABLENAME %>', {
+  <% for(var i=0; i< COLUMNS.length; i++) { %>
+    "<%= COLUMNS[i].name %>": Sequelize.STRING,
+  <% } %>
+})

@@ -1,7 +1,5 @@
 import microdsl from "./"
 import { IDb } from "./interfaces";
-import { compile } from "ejs";
-
 
 // Mysql connect config.
 var config: IDb = {
@@ -17,6 +15,5 @@ async function test() {
   })  
   console.log(compiled)
 }
-
 
 test()

@@ -2,7 +2,7 @@
   "name": "MicroDSL",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/compile.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc"
