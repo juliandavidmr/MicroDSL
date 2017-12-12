@@ -69,10 +69,10 @@ node test.js
 ```html
 Register convocatoria
 <form action="/convocatoria" method="post">
-  <input type="text" name="id" id="id">
-  <input type="text" name="nombre" id="nombre">
-  <input type="text" name="descripcion" id="descripcion">
-  <input type="text" name="fecha" id="fecha">
+  <input type="text" name="id">
+  <input type="text" name="nombre">
+  <input type="text" name="descripcion">
+  <input type="text" name="fecha">
   <input type="button" value="Send">
 </form>
 ```
