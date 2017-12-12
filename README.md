@@ -44,7 +44,7 @@ microdsl(config, './form.html.microdsl').then(compiled => {
 })
 ```
 
-**Step 2**: Create file input
+**Step 2**: Create file input _(form.html.microdsl)_
 ```html
 Register <%= TABLENAME %>
 
@@ -70,6 +70,18 @@ Register convocatoria
   <input type="button" value="Send">
 </form>
 ```
+
+## API
+
+MicroDSL has global variables that can be called from the input files
+
+|  Variable |     Description   |  Content structure  |
+|-----------|-------------------|---------------------|
+| TABLENAME | Name of the table | string type - 'person'  |
+| COLUMNS   | Columns of the current table | array type - `[{ "Type": "varchar(64)","Null": "NO", "Key": "", "Default": null, "Extra": "", "name": "nombre" }, ...]` |
+| RELS      | Relations of the current table (foreign keys) | `['role.id', ...]`|
+
+> If you want to know more about the compilation syntax, see [EJS](http://www.embeddedjs.com)
 
 # TODO
 - [ ] Create CLI _(separate project)_
