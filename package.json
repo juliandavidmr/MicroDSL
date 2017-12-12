@@ -1,22 +1,46 @@
 {
-  "name": "MicroDSL",
-  "version": "1.0.0",
-  "description": "",
-  "main": "bin/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc"
+  "name": "microdsl",
+  "version": "1.0.1",
+  "description": "MicroDSL is a powerful but simple document generator everything from any mysql database. Automatically generate web forms, JSON models for any ORM, and an infinite number of other file structures.",
+  "main": "./bin/index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test",
+    "bin": "bin"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^8.0.57",
-    "typescript": "^2.6.2",
-    "@types/ejs": "^2.3.33"
-  },
-  "dependencies": {    
+  "files": [
+    "bin",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
     "ejs": "^2.5.7",
     "mysqlspec": "^1.0.5"
-  }
+  },
+  "devDependencies": {
+    "@types/ejs": "^2.3.33",
+    "@types/node": "^8.0.57",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandavidmr/MicroDSL.git"
+  },
+  "keywords": [
+    "dsl",
+    "generator",
+    "micro",
+    "ejs",
+    "mysql",
+    "auto"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliandavidmr/MicroDSL/issues"
+  },
+  "homepage": "https://github.com/juliandavidmr/MicroDSL#readme"
 }

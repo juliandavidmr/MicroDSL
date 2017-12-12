@@ -22,6 +22,8 @@ Automatically building a simple web form
 
 **Step 1**: Import package and connect your database
 ```js
+// test.js
+
 var microdsl = require('microdsl')
 
 // Mysql connect config
@@ -58,6 +60,10 @@ Register <%= TABLENAME %>
 ```
 
 **Step 3**: Start compilation
+
+```bash
+node test.js
+```
 
 **Example output for a database table:**
 ```html
