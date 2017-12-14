@@ -96,6 +96,16 @@ MicroDSL has global variables that can be called from the input files
 | to_waterline | returns the equivalent MySQL object type in Waterline ORM  |
 | is_required  | returns a boolean, true if the MySQL attribute is required |
 
+Example of execution of a function:
+```bash
+<% for(var i=0; i< COLUMNS.length; i++) { %>
+  '<%= COLUMNS[i].name %>': {
+    type: '<%= to_waterline(COLUMNS[i]) %>',
+    required: <%= is_required(COLUMNS[i]) %>
+  },
+<% } %>
+```
+
 # TODO
 - [ ] Create CLI _(separate project)_
 - [ ] [More examples](./examples)
