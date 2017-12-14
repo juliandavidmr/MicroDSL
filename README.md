@@ -69,10 +69,10 @@ node test.js
 ```html
 Register convocatoria
 <form action="/convocatoria" method="post">
-  <input type="text" name="id" id="id">
-  <input type="text" name="nombre" id="nombre">
-  <input type="text" name="descripcion" id="descripcion">
-  <input type="text" name="fecha" id="fecha">
+  <input type="text" name="id">
+  <input type="text" name="nombre">
+  <input type="text" name="descripcion">
+  <input type="text" name="fecha">
   <input type="button" value="Send">
 </form>
 ```
@@ -89,9 +89,16 @@ MicroDSL has global variables that can be called from the input files
 
 > If you want to know more about the compilation syntax, see [EJS](http://www.embeddedjs.com)
 
+### **Functions**
+|  Function    | Description                                                |
+|--------------|------------------------------------------------------------|
+| to_waterline | returns the equivalent MySQL object type in Sequelize ORM  |
+| to_waterline | returns the equivalent MySQL object type in Waterline ORM  |
+| is_required  | returns a boolean, true if the MySQL attribute is required |
+
 # TODO
 - [ ] Create CLI _(separate project)_
-- [ ] More examples
+- [ ] [More examples](./examples)
 
 ---
 

@@ -11,6 +11,7 @@ var config = {
 // form.html.microdsl
 // test.view.microdsl
 // sequelize.microdsl
-microdsl(config, './sequelize.microdsl').then(compiled => {
+// waterline.model.microdsl
+microdsl(config, './waterline.model.microdsl').then(compiled => {
   console.log(compiled)
 })

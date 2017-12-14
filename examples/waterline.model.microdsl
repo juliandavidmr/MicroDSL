@@ -1,0 +1,13 @@
+module.exports = {
+
+  attributes: {
+
+    <% for(var i=0; i< COLUMNS.length; i++) { %>
+      '<%= COLUMNS[i].name %>': {
+        type: '<%= to_waterline(COLUMNS[i]) %>',
+        required: <%= is_required(COLUMNS[i]) %>,
+        <%= (COLUMNS[i].Default !== null? 'defaultsTo:' + COLUMNS[i].Default : '') %>
+      },
+    <% } %>
+  },
+};

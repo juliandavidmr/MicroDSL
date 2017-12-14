@@ -1,6 +1,7 @@
 # Examples
 
 - [x] [Model of Sequelize ORM](./sequelize.microdsl)
+- [x] [Model of Waterline ORM (SailsJS)](./waterline.model.microdsl)
 - [x] [Html form](form.html.microdsl)
 - [x] [Html list](test.view.microdsl)
 

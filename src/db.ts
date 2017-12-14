@@ -19,7 +19,7 @@ export default function getSchema(config: IDb) {
 function prepareSchema(schema: any) {
   var r: any = {}
   for (const key in schema) {
-    const element = schema[key];
+    const element = schema[key]
     r[key] = r[key] ? r[key] : {}
     r[key]['columns'] = Object.keys(element.columns).map(it => ({
       ...element.columns[it],
