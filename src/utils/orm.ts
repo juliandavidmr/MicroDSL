@@ -5,6 +5,10 @@ const r_bigint = /BIGINT+\(?([0-9]*)\)?/
 const r_tinyint = /TINYINT+\(?([0-9])\)?/
 const r_charbin = /CHAR\s*\(([0-9]*)\)\s*BINARY/
 
+/**
+ * Convert a mysql data type to sequelize
+ * @param typeAttrMysql 
+ */
 export function convertTypeSequelize(typeAttrMysql: any): string {
   if (typeof typeAttrMysql === 'object') {
     return convertTypeSequelize(typeAttrMysql['Type'])
@@ -39,6 +43,10 @@ export function convertTypeSequelize(typeAttrMysql: any): string {
   }
 }
 
+/**
+ * Convert a mysql data type to waterline
+ * @param typeAttrMysql 
+ */
 export function convertTypeWaterline(typeAttrMysql: any): string {
   if (typeof typeAttrMysql === 'object') {
     return convertTypeWaterline(typeAttrMysql['Type'])
