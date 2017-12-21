@@ -1,6 +1,6 @@
 {
   "name": "microdsl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MicroDSL is a powerful but simple document generator everything from any mysql database. Automatically generate web forms, JSON models for any ORM, and an infinite number of other file structures.",
   "main": "./bin/index.js",
   "directories": {
