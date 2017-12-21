@@ -1,6 +1,6 @@
 {
   "name": "microdsl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MicroDSL is a powerful but simple document generator everything from any mysql database. Automatically generate web forms, JSON models for any ORM, and an infinite number of other file structures.",
   "main": "./bin/index.js",
   "directories": {
@@ -20,11 +20,13 @@
   "devDependencies": {
     "@types/ejs": "^2.3.33",
     "@types/node": "^8.0.57",
+    "standard-version": "^4.2.0",
     "typescript": "^2.6.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc"
+    "start": "tsc",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
