@@ -3,15 +3,16 @@ var microdsl = require('../')
 // Mysql connect config.
 var config = {
   user: 'root',
-  password: 'root',
+  password: '',
   host: 'localhost',
-  database: 'projectvisibilidad'
+  database: 'eter'
 }
 
-// form.html.microdsl
-// test.view.microdsl
-// sequelize.microdsl
-// waterline.model.microdsl
-microdsl(config, './waterline.model.microdsl').then(compiled => {
-  console.log(compiled)
+// form.html.ejs
+// test.view.ejs
+// sequelize.ejs
+// waterline.ejs
+// miscellaneous.ejs
+microdsl(config, './miscellaneous.ejs').then(compiled => {
+  console.log(compiled.join('\n\n'))
 })
