@@ -30,8 +30,8 @@
     "underscore": "^1.8.3"
   },
   "scripts": {
-    "start": "tsc",
-    "release": "standard-version",
+    "clean": "rm -rf bin/",
+    "start": "npm run clean && tsc",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "repository": {

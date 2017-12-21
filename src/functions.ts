@@ -4,15 +4,15 @@
  * therefore it is possible to call any function defined here from the templates
  */
 import {
-  convertTypeSequelize,
-  convertTypeWaterline,
+  to_sequelize,
+  to_waterline,
   is_required,
   tag
 } from "./utils"
 
 export const functions = {
-  to_sequelize: (type: any) => convertTypeSequelize(type),
-  to_waterline: (type: any) => convertTypeWaterline(type),
+  to_sequelize,
+  to_waterline,
   is_required,
   tag
 }

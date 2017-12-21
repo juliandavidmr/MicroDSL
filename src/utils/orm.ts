@@ -9,9 +9,9 @@ const r_charbin = /CHAR\s*\(([0-9]*)\)\s*BINARY/
  * Convert a mysql data type to sequelize
  * @param typeAttrMysql 
  */
-export function convertTypeSequelize(typeAttrMysql: any): string {
+export function to_sequelize(typeAttrMysql: any): string {
   if (typeof typeAttrMysql === 'object') {
-    return convertTypeSequelize(typeAttrMysql['Type'])
+    return to_sequelize(typeAttrMysql['Type'])
   }
   typeAttrMysql = typeAttrMysql ? typeAttrMysql.toUpperCase().trim() : ''
   if (r_varchar.test(typeAttrMysql)) {
@@ -47,9 +47,9 @@ export function convertTypeSequelize(typeAttrMysql: any): string {
  * Convert a mysql data type to waterline
  * @param typeAttrMysql 
  */
-export function convertTypeWaterline(typeAttrMysql: any): string {
+export function to_waterline(typeAttrMysql: any): string {
   if (typeof typeAttrMysql === 'object') {
-    return convertTypeWaterline(typeAttrMysql['Type'])
+    return to_waterline(typeAttrMysql['Type'])
   }
   typeAttrMysql = typeAttrMysql ? typeAttrMysql.toUpperCase().trim() : ''
   if (r_varchar.test(typeAttrMysql) || r_varcharbin.test(typeAttrMysql)) {
