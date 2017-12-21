@@ -105,7 +105,7 @@ MicroDSL has global variables that can be called from the input files
 
 Example of execution of a function:
 
-```bash
+```ejs
 <% for(var i=0; i< COLUMNS.length; i++) { %>
   '<%= COLUMNS[i].name %>': {
     type: '<%= to_waterline(COLUMNS[i]) %>',
