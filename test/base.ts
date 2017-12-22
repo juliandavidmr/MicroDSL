@@ -1,10 +1,12 @@
+// use db_test.sql
+
 import * as microdsl from "../"
 
 const config = {
 	user: 'root',
-	password: '',
+	password: 'root',
 	host: 'localhost',
-	database: 'eter'
+	database: 'webapp'
 }
 
 export default function (template: string) {
