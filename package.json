@@ -19,9 +19,9 @@
   },
   "devDependencies": {
     "@types/chai": "^4.0.10",
-    "@types/ejs": "^2.3.33",
+    "@types/ejs": "^2.5.0",
     "@types/mocha": "^2.2.44",
-    "@types/node": "^8.0.57",
+    "@types/node": "^8.5.2",
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "standard-version": "^4.2.0",
